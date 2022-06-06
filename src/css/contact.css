@@ -1,0 +1,61 @@
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 7%;
+  /* background-color: rgba(254, 214, 133, 0.51); */
+  background-color: rgba(28, 106, 174, 0.532);
+  z-index: 1;
+}
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 2rem;
+  /* background-color: blue; */
+  z-index: 1;
+}
+.contact .projects__title {
+  flex: 1;
+  color: aliceblue;
+  min-width: 14em;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.855));
+}
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1.6rem;
+  min-width: 14em;
+  z-index: 1;
+}
+.contact-form input,
+textarea {
+  border: 0.2rem solid var(--mainorange);
+  border-radius: 0.5rem;
+  width: 80%;
+  min-width: 5rem !important;
+  max-width: 30rem;
+  resize: none;
+  padding: 0 1rem;
+  margin: 0;
+  filter: drop-shadow(-1rem 1rem 1rem rgba(168, 167, 167, 0.491));
+}
+.contact-form input:focus,
+textarea:focus {
+  border: 0.2rem solid var(--mainorange);
+  outline: none;
+}
+.contact-form input {
+  height: 2.5rem;
+}
+.contact-form input:nth-of-type(1) {
+  text-transform: capitalize;
+}
+.contact-form textarea {
+  padding: 0.5rem 1rem;
+}

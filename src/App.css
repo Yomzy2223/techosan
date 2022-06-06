@@ -1,38 +1,93 @@
+:root {
+  --mainblack: rgb(35, 37, 38);
+  --mainorange: #ffb223;
+  --mainblue: rgb(27, 27, 151);
+}
+
 .App {
-  text-align: center;
+  font-family: lato;
+  /* background-color: #ffb223; */
+  background-color: white;
+  color: var(--mainblack);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-open {
+  height: 100vh;
+  overflow: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.styled-button {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
   color: white;
+  background-color: var(--mainorange);
+  border: 0.1rem solid var(--mainorange);
+  box-shadow: 0 0 1rem var(--mainorange) inset;
+  filter: drop-shadow(-0.5rem 1rem 1rem rgba(255, 197, 51, 0.492));
+  transition: 0.3s all ease;
+  /* background: linear-gradient(var(--mainorange), rgb(254, 127, 0)); */
+}
+.styled-button:hover {
+  color: white;
+  background-color: var(--mainorange);
+  border-color: var(--mainorange);
+  transform: perspective(1rem) translateZ(0.1rem);
+}
+.styled-button:focus {
+  background-color: rgba(255, 184, 51, 0.626);
+  color: white;
+  outline: none;
+}
+.hire__me {
+  animation: button 2s ease infinite;
+}
+@keyframes button {
+  0% {
+    color: var(--mainblack);
+    background-color: white;
+    transform: perspective(1rem) translateZ(0.1rem);
+  }
+  25% {
+    color: white;
+    background-color: var(--mainorange);
+    transform: perspective(1rem) translateZ(0rem);
+    /* background: linear-gradient(white, var(--mainorange), white); */
+  }
+  50% {
+    color: var(--mainblack);
+    transform: perspective(1rem) translateZ(0.1rem);
+    background-color: white;
+    /* background: linear-gradient(white, var(--mainorange), white); */
+  }
+  75% {
+    color: white;
+    background-color: var(--mainorange);
+    transform: perspective(1rem) translateZ(0rem);
+    /* background: linear-gradient(var(--mainorange), white, var(--mainorange)); */
+  }
+  100% {
+    color: var(--mainblack);
+    background-color: white;
+    transform: perspective(1rem) translateZ(0.1rem);
+    /* background: linear-gradient(var(--mainorange), white, var(--mainorange)); */
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.button2 {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: linear-gradient(purple, orange);
+  border-radius: 2rem;
+  transition: 0.3s all ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button2:hover {
+  transform: perspective(1rem) translateZ(0.1rem);
+}
+.button2:focus {
+  background: linear-gradient(
+    rgba(128, 0, 128, 0.456),
+    rgba(255, 166, 0, 0.474)
+  );
 }

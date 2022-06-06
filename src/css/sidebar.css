@@ -1,0 +1,116 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(218, 218, 218, 0.587);
+  z-index: 3;
+  overflow: visible;
+}
+.sidebar-main {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  width: 10rem;
+  max-width: 80vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.5s all ease;
+}
+.sidebar-m-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: lato;
+  margin-top: 2rem;
+  width: 90%;
+  gap: 0.5rem;
+  background-color: var(--mainblue);
+  border-radius: 1rem;
+  color: aliceblue;
+  padding: 0.5rem 0;
+  filter: drop-shadow(0 1rem 1rem rgba(179, 179, 179, 0.353));
+}
+.diamond {
+  color: aliceblue;
+  animation: techosan 2s linear infinite;
+}
+.sidebar-m-name p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 1rem;
+  margin: 0;
+  color: transparent;
+  background-color: yellow;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 186, 49),
+    white,
+    rgb(255, 183, 39)
+  );
+  filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.681));
+}
+.sidebar-m-name span {
+  font-family: josefin-sans;
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--mainorange);
+  color: rgb(255, 255, 255);
+  animation: techosan 2s linear infinite;
+}
+@keyframes techosan {
+  0% {
+    color: white;
+  }
+  20% {
+    color: rgb(174, 243, 212);
+  }
+  40% {
+    color: rgb(231, 186, 228);
+  }
+  60% {
+    color: rgb(255, 255, 255);
+  }
+  80% {
+    color: rgb(226, 206, 126);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+.sidebar-m-body {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  width: 90%;
+  /* background-color: antiquewhite; */
+}
+.sidebar-m-body div {
+  background-color: rgba(255, 240, 213, 0.331);
+  margin: 0.5rem 0;
+  padding: 1rem 0rem 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--mainorange);
+  color: var(--mainorange);
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+.sidebar-m-body div:hover {
+  color: white;
+  background-color: var(--mainorange);
+}
+.sidebar-m-body div:active {
+  transform: perspective(1rem) translateZ(-0.1rem);
+}
+.sidebar-m-body p {
+  margin: 0;
+  filter: drop-shadow(0 0 0.3rem rgba(255, 184, 70, 0.479));
+}

@@ -1,0 +1,39 @@
+.testimony {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 7%;
+}
+.c__wrapper {
+  width: max-content;
+}
+.c__swiper {
+  align-self: center;
+  width: inherit;
+}
+.c__swiper .swiper-slide {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background: linear-gradient(
+    to right,
+    rgb(214, 214, 213),
+    rgb(255, 255, 255),
+    rgb(214, 214, 213)
+  );
+  filter: drop-shadow(0 0 0.2rem rgba(177, 177, 177, 0.511));
+}
+.c__swiper .swiper-slide p {
+  max-width: 80%;
+  text-align: justify;
+}
+.testimony__img {
+  max-width: auto;
+  width: 5rem;
+  object-fit: contain;
+  border-radius: 1rem;
+}
