@@ -25,6 +25,15 @@
 
 @media screen and (max-width: 400px) {
   .proficiency {
-    left: 1rem;
+    left: 4rem;
+    width: 38%;
+    min-width: 2rem;
+  }
+  .proficiency img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .proficiency p {
+    font-size: 0.8rem;
   }
 }

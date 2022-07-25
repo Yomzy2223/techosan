@@ -3,7 +3,6 @@
   flex-flow: column nowrap;
   flex: 1;
   color: var(--mainblack);
-  background-color: rgba(255, 255, 255, 0.95);
   padding-bottom: 10rem;
 }
 .homepage-body__main {
@@ -15,9 +14,13 @@
   max-width: max-content;
   /* margin: 7vh 7% 1rem 7%; */
   margin: 5vh 7%;
-  gap: 4rem;
+  gap: 8rem;
   min-height: 80vh;
   min-width: 86%;
+  /* background: url("https://cdn.pixabay.com/photo/2017/09/11/15/58/sunset-2739472__340.jpg") */
+  /* no-repeat; */
+  background-size: cover;
+
   /* background-color: aqua; */
 }
 .main-info {
@@ -63,10 +66,12 @@
   color: var(--mainorange);
 }
 .homepage-images {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   flex: 1;
   min-width: 15rem;
-  max-width: 100vw;
+  max-width: 100%;
   z-index: 1;
   justify-self: flex-end;
   /* background-color: aqua; */
@@ -74,16 +79,26 @@
 .image {
   position: relative;
   width: 100%;
-  max-width: 45rem;
+  /* transform: scale(0.7); */
+  max-width: 20rem;
+  /* top: 2rem; */
   /* background-color: yellow; */
 }
-.emoji1 {
+.emoji {
   position: absolute;
-  left: -3rem;
-  top: 10rem;
   width: 30%;
+  max-width: 9rem;
   border-radius: 2rem;
   z-index: 2;
+}
+.emoji1 {
+  /* left: -2rem; */
+  left: 0%;
+  top: 10rem;
+}
+.emoji4 {
+  bottom: -5rem;
+  left: 3rem;
 }
 .blur {
   position: absolute;
@@ -146,27 +161,29 @@
 }
 .contact-section {
   position: relative;
-  background: url("https://cdn.pixabay.com/photo/2016/02/07/21/03/computer-1185626__340.jpg")
-    no-repeat;
+  /* background: url("https://cdn.pixabay.com/photo/2016/02/07/21/03/computer-1185626__340.jpg")
+    no-repeat; */
+  background: url("https://cdn.pixabay.com/photo/2019/08/21/02/57/network-4420048__340.jpg")
+    repeat;
   background-size: cover;
   margin: 5rem 0 0 0;
 }
 .bottom-curve {
   justify-content: flex-end;
-  position: absolute;
+  /* position: absolute; */
   bottom: -10rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  height: 10rem;
+  /* height: 10rem; */
   color: aliceblue;
   z-index: 0;
   background-color: rgb(64, 120, 120);
 }
 .bottom-curve img {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 30rem;
 }
@@ -187,6 +204,50 @@
   width: 100%;
   /* background-color: aqua; */
 }
+.shapedividers_com-4017 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-4017::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 90px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23fbd8c2"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23fbd8c2"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23fbd8c2"/></svg>');
+}
+
+@media (min-width: 768px) {
+  .shapedividers_com-4017::before {
+    background-size: 100% 90px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-4017::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 251px;
+    background-position: 50% 100%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23ffb223"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23ffb223"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23ffb223"/></svg>');
+  }
+}
+@media (min-width: 2100px) {
+  .shapedividers_com-4017::before {
+    background-size: 100% calc(2vw + 251px);
+  }
+}
+
 @media screen and (min-width: 920px) {
   .homepage-body__main {
     min-height: 86vh;
@@ -201,5 +262,10 @@
   }
   .bottom-curve img {
     height: 20rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .image {
+    /* right: -7%; */
   }
 }

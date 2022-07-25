@@ -37,6 +37,18 @@
   background-color: white;
   filter: drop-shadow(-3rem 3rem 1rem rgba(205, 204, 204, 0.242));
   z-index: 1;
+  animation: circle 10s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 .companies__circles-main > div {
   position: absolute;

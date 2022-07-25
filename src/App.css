@@ -6,9 +6,11 @@
 
 .App {
   font-family: lato;
-  /* background-color: #ffb223; */
+  background: url("https://cdn.pixabay.com/photo/2012/02/22/09/24/background-15343__340.jpg")
+    repeat;
   background-color: white;
   color: var(--mainblack);
+  width: 100%;
 }
 .modal-open {
   height: 100vh;

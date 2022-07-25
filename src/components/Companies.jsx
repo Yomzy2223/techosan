@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/companies.css";
-import my_cv from "../assets/My CV.pdf";
+// import my_cv from "../assets/My CV.pdf";
 import links from "../assets/links";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -9,7 +9,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Companies = () => {
   const { twitter_image } = links;
-
+  const scrollBody = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="companies">
       <div className="main-info companies-left">
@@ -25,7 +28,12 @@ const Companies = () => {
           avid learner
         </p>
         <div style={{ position: "relative" }}>
-          <button className="styled-button hire__me">Hire me</button>
+          <button
+            className="styled-button hire__me"
+            onClick={() => scrollBody("contact")}
+          >
+            Hire me
+          </button>
           <div className="blur blur5"></div>
         </div>
       </div>

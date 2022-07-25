@@ -25,7 +25,9 @@ function Home() {
       >
         <Header />
         <SideBar />
-        <Body />
+        <div className="body-container">
+          <Body />
+        </div>
       </myContext.Provider>
     </div>
   );

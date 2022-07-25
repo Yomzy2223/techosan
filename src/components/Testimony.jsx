@@ -55,8 +55,10 @@ const Testimony = () => {
           <div className="swiper-wrapper">
             {Clients_testimonies.map((testimony) => (
               <div className="swiper-slide" key={testimony.id}>
-                <img src={testimony.img} alt="" className="testimony__img" />
-                <p>{testimony.text}</p>
+                <div>
+                  <img src={testimony.img} alt="" className="testimony__img" />
+                  <p>{testimony.text}</p>
+                </div>
               </div>
             ))}
           </div>

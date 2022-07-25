@@ -14,22 +14,29 @@
   width: inherit;
 }
 .c__swiper .swiper-slide {
+  margin-top: 1rem;
+  /* background: url("https://cdn.pixabay.com/photo/2017/10/23/16/04/milky-way-2881461__340.jpg")
+    no-repeat;
+  background-size: cover; */
+}
+.c__swiper .swiper-slide > div {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: 1rem;
   padding: 1rem 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
-    rgb(214, 214, 213),
-    rgb(255, 255, 255),
-    rgb(214, 214, 213)
-  );
+    rgb(14, 22, 82),
+    rgb(130, 16, 126),
+    rgb(13, 40, 114)
+  ); */
   filter: drop-shadow(0 0 0.2rem rgba(177, 177, 177, 0.511));
+  background-color: white;
 }
 .c__swiper .swiper-slide p {
   max-width: 80%;
   text-align: justify;
+  color: black;
 }
 .testimony__img {
   max-width: auto;

@@ -16,7 +16,7 @@ import bottom_curve from "../assets/bottom-curve.png";
 import { motion } from "framer-motion";
 
 function Body() {
-  const { web_image, emoji1 } = links;
+  const { web_image, emoji1, emoji4 } = links;
   const scrollBody = (id) => {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth" });
@@ -51,6 +51,9 @@ function Body() {
             <TwitterIcon sx={{ fontSize: 50 }} />
             <LinkedInIcon sx={{ fontSize: 50 }} />
           </div>
+          <div>
+            <img src={emoji4} alt="" className="emoji emoji4" />
+          </div>
         </div>
         <div className="homepage-images">
           <div className="image">
@@ -61,13 +64,32 @@ function Body() {
               alt="sayo"
             />
           </div>
-          <motion.img src={emoji1} alt="" className="emoji1" />
+          <motion.img
+            initial={{ top: "-50%", right: "10rem" }}
+            whileInView={{ top: "0", right: "0" }}
+            transition={transition}
+            src={emoji1}
+            alt=""
+            className="emoji emoji1"
+          />
           <div className="blur"></div>
           <Proficiency
             title="Web Developer"
             image={web_image}
-            top="-5%"
+            top="-9%"
             right="-4%"
+          />
+          <Proficiency
+            title="React js"
+            image={web_image}
+            bottom="-20%"
+            left="-10%"
+          />
+          <Proficiency
+            title="Firebase"
+            image={web_image}
+            bottom="50%"
+            left="-10%"
           />
         </div>
       </div>
@@ -95,7 +117,7 @@ function Body() {
       </div>
       <div id="contact" className="contact-section">
         <Contact />
-        <div className="bottom-curve">
+        <div className="bottom-curve shapedividers_com-4017">
           <div className="bottom-curve-content">
             <p>Techosan@gmail.com</p>
             <div>
@@ -104,7 +126,7 @@ function Body() {
               <LinkedInIcon sx={{ fontSize: 40 }} />
             </div>
           </div>
-          <img src={bottom_curve} alt="" />
+          {/* <img src={bottom_curve} alt="" /> */}
         </div>
       </div>
     </div>

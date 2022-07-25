@@ -1,7 +1,7 @@
 const web_image =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP53QoV91Oz3g6wgyRNbQGPrTWlQo55kC_eg&usqp=CAU";
 
-const emoji1 =
+const emoji4 =
   "https://cdn.pixabay.com/photo/2020/02/10/08/56/emoji-4835770__340.png";
 
 const emoji2 =
@@ -9,6 +9,9 @@ const emoji2 =
 
 const emoji3 =
   "https://cdn.pixabay.com/photo/2019/02/19/19/45/thumbs-up-4007573__340.png";
+
+const emoji1 =
+  "https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518__340.png";
 
 const linkedIn = "https://img.icons8.com/ios-glyphs/2x/linkedin-circled.png";
 
@@ -28,6 +31,7 @@ export default {
   emoji1,
   emoji2,
   emoji3,
+  emoji4,
   linkedIn,
   fiverr,
   facebook,

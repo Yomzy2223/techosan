@@ -2,5 +2,14 @@
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
-  /* background-color: rgb(42, 15, 68); */
+  background-color: #ffffffe3;
+  /* background-color: rgb(80, 16, 140); */
+}
+.body-container {
+  max-width: 1250px;
+}
+@media screen and (min-width: 1200px) {
+  .body-container {
+    align-self: center;
+  }
 }
